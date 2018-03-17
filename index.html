@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="assets/RPS.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Rock, Paper, Scissors</h1>
+
+        </div>
+    </div>
+    <div class="continer">
+        <div class="row">
+            <div id="player1" class="col-4 text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Player 1</h5>
+                        <div class="input-group">
+                            <textarea id="player2" class="form-control" aria-label="With textarea"></textarea>
+                            <div class="input-group-prepend">
+                                <br>
+                                <span id="send" class="input-group-text">send</span>
+                            </div>
+                        </div>
+                        <p class="card-text"></p>
+                        <a id="rock1" class="btn btn-primary choice">Rock</a>
+                        <a id="paper1" class="btn btn-primary choice">Paper</a>
+                        <a id="scissors1" class="btn btn-primary choice">Scissors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="card" style="width: 18rem;">
+                    <img id="winner-loser-image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Selection</h5>
+                        <p id="winner-loser-text"></p>
+                        <br/>
+                    </div>
+                </div>
+
+            </div>
+            <div id="player2" class="col-4 text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Player 2</h5>
+                        <div class="input-group">
+                            <textarea id="player2" class="form-control" aria-label="With textarea"></textarea>
+                            <div class="input-group-prepend">
+                                <br>
+                                <span id="send" class="input-group-text">send</span>
+                            </div>
+                        </div>
+                        <p class="card-text"></p>
+                        <p></p>
+                        <p></p>
+                        <a id="rock2" class="btn btn-primary choice">Rock</a>
+                        <a id="paper2" class="btn btn-primary choice">Paper</a>
+                        <a id="scissors2" class="btn btn-primary choice">Scissors</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="input-group">
+                    <textarea id="message" class="form-control" aria-label="With textarea"></textarea>
+                    <div class="input-group-prepend">
+                        <span id="send" class="input-group-text">send</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9 offset-2">
+                <div id="chatBox"></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
